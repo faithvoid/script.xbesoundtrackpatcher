@@ -1,4 +1,4 @@
-## Soundtrack Hex Editor for XBMC
+## XBE Audio Patcher for XBMC
 A utility that modifies the hex of .XBE files to read soundtrack files from "F:\TDATA\FFFE000" instead of "E:\TDATA\FFFE000".
 
 ## How to use:
