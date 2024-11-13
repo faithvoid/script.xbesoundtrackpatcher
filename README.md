@@ -18,3 +18,6 @@ The F:\ partition on most modded Xboxes tends to be much larger than the default
 - Ask the user to set a custom 7-character directory to load soundtrack files from.
 - Implement script to move soundtrack files from E to F.
 - Implement dual-HDD support for Cerbios users.
+
+## Credits:
+- Sifaw99 on OGXbox for the original documentation of what hex values had to be modified!
