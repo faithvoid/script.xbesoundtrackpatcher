@@ -15,8 +15,8 @@ A utility that modifies the hex of .XBE files to read soundtrack files from "F:\
 The F:\ partition on most modded Xboxes tends to be much larger than the default E partition, so this is a great way to maximize how many songs you can have at once on your Xbox, or keep different soundtracks seperate!
 
 ## TODO:
-- Ask the user to set a custom 7-character directory to load soundtrack files from.
-- Implement script to move soundtrack files from E to F.
+- Ask the user to set a custom directory to load soundtrack files from (as long as it's the same amount of characters, any custom directory should be okay!).
+- Implement script to automatically move ST.DB files from E to F.
 - Implement dual-HDD support for Cerbios users.
 - Add read/write support to ST.DB viewer.
 
