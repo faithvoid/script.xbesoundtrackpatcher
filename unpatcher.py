@@ -7,7 +7,7 @@ import os
 OLD_PATH = b"\x5C\x44\x65\x76\x69\x63\x65\x5C\x48\x61\x72\x64\x64\x69\x73\x6B\x30\x5C\x50\x61\x72\x74\x69\x74\x69\x6F\x6E\x36\x5C\x54\x44\x41\x54\x41\x5C\x46\x46\x46\x45\x30\x30\x30\x30\x5C"
 NEW_PATH = b"\x5C\x44\x65\x76\x69\x63\x65\x5C\x48\x61\x72\x64\x64\x69\x73\x6B\x30\x5C\x50\x61\x72\x74\x69\x74\x69\x6F\x6E\x31\x5C\x54\x44\x41\x54\x41\x5C\x46\x46\x46\x45\x30\x30\x30\x30\x5C"
 
-class XBEFileEditor:
+class XBEAudioUnpatcher:
     def __init__(self):
         self.xbe_file_path = None
         self.save_directory = None
@@ -17,7 +17,7 @@ class XBEFileEditor:
         # Prompt the user to select an .xbe file
         self.xbe_file_path = xbmcgui.Dialog().browse(1, 'Select .xbe file', 'files', '.xbe')
         if not self.xbe_file_path:
-            xbmcgui.Dialog().ok("XBE File Editor", "No file selected.")
+            xbmcgui.Dialog().ok("XBE Audio Unpatcher", "No file selected.")
             return False
         return True
 
@@ -25,7 +25,7 @@ class XBEFileEditor:
         # Prompt user to select a folder for saving the new .xbe file
         self.save_directory = xbmcgui.Dialog().browse(0, 'Select Folder to Save .xbe', 'files')
         if not self.save_directory:
-            xbmcgui.Dialog().ok("XBE File Editor", "No save location selected.")
+            xbmcgui.Dialog().ok("XBE Audio Unpatcher", "No save location selected.")
             return False
 
         # Prompt user for the filename using xbmc.Keyboard
@@ -34,10 +34,10 @@ class XBEFileEditor:
         if keyboard.isConfirmed():
             self.save_filename = keyboard.getText()
             if not self.save_filename:
-                xbmcgui.Dialog().ok("XBE File Editor", "No filename entered.")
+                xbmcgui.Dialog().ok("XBE Audio Unpatcher", "No filename entered.")
                 return False
         else:
-            xbmcgui.Dialog().ok("XBE File Editor", "Filename input canceled.")
+            xbmcgui.Dialog().ok("XBE Audio Unpatcher", "Filename input canceled.")
             return False
 
         # Combine directory and filename to create full path
@@ -47,7 +47,7 @@ class XBEFileEditor:
     def replace_hex(self):
         # Ensure an input file is selected
         if not self.xbe_file_path:
-            xbmcgui.Dialog().ok("XBE File Editor", "Please select an .xbe file first.")
+            xbmcgui.Dialog().ok("XBE Audio Unpatcher", "Please select an .xbe file first.")
             return
 
         try:
@@ -56,7 +56,7 @@ class XBEFileEditor:
 
                 # Check if OLD_PATH exists in xbe_data
                 if OLD_PATH not in xbe_data:
-                    xbmcgui.Dialog().ok("XBE File Editor", "Pattern not found in file.")
+                    xbmcgui.Dialog().ok("XBE Audio Unpatcher", "Pattern not found in file.")
                     return
 
                 # Perform replacement
@@ -66,10 +66,10 @@ class XBEFileEditor:
                 with open(self.save_file_path, 'wb') as new_xbe_file:
                     new_xbe_file.write(xbe_data)
 
-                xbmcgui.Dialog().ok("XBE File Editor", "File saved successfully!")
+                xbmcgui.Dialog().ok("XBE Audio Unpatcher", "File saved successfully!")
 
         except Exception as e:
-            xbmcgui.Dialog().ok("XBE File Editor", "Error: " + str(e))
+            xbmcgui.Dialog().ok("XBE Audio Unpatcher", "Error: " + str(e))
 
     def run(self):
         # Step 1: Ask user to browse for the input file
@@ -85,5 +85,5 @@ class XBEFileEditor:
 
 # Main execution
 if __name__ == '__main__':
-    editor = XBEFileEditor()
+    editor = XBEAudioUnpatcher()
     editor.run()
