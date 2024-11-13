@@ -6,8 +6,8 @@ import sys
 def main():
     dialog = xbmcgui.Dialog()
     feeds = [
-        ("Patch .XBE Soundtrack Location", "RunScript(Q:\\scripts\\XBEAudioPatcher\\patcher.py)"),
-        ("Unpatch .XBE Soundtrack Location", "RunScript(Q:\\scripts\\XBEAudioPatcher\\unpatcher.py)"),
+        ("Patch .XBE Soundtrack (E: to F:)", "RunScript(Q:\\scripts\\XBEAudioPatcher\\patcher.py)"),
+        ("Unpatch .XBE Soundtrack Location (F: to E:)", "RunScript(Q:\\scripts\\XBEAudioPatcher\\unpatcher.py)"),
         ("View ST.DB", "RunScript(Q:\\scripts\\XBEAudioPatcher\\viewer.py)"),
     ]
     
