@@ -1,5 +1,5 @@
 ## XBE Audio Patcher for XBMC
-A utility that modifies the hex of .XBE files to read soundtrack files from "F:\TDATA\FFFE000" instead of "E:\TDATA\FFFE000".
+A utility that modifies the hex of .XBE files to read soundtrack files from "F:\TDATA\FFFE000" instead of "E:\TDATA\FFFE000". Includes ST.DB viewer to view contents of each individual ST.DB file. 
 
 ## How to use:
 - Move "E:\TDATA\FFFE000" to "F:\TDATA\FFFE000"
@@ -18,6 +18,8 @@ The F:\ partition on most modded Xboxes tends to be much larger than the default
 - Ask the user to set a custom 7-character directory to load soundtrack files from.
 - Implement script to move soundtrack files from E to F.
 - Implement dual-HDD support for Cerbios users.
+- Add read/write support to ST.DB viewer.
 
 ## Credits:
 - Sifaw99 on OGXbox for the original documentation of what hex values had to be modified!
+- root670 & kickerofbottoms - ST.DB research (the ST.DB viewer script uses a lot of pystdb code!)
