@@ -6,11 +6,11 @@ import sys
 def main():
     dialog = xbmcgui.Dialog()
     feeds = [
-        ("Patch .XBE Soundtrack Location", "RunScript(Q:\\scripts\\Cortana Server Browser\\insignia\\patcher.py)"),
+        ("Patch .XBE Soundtrack Location", "RunScript(Q:\\scripts\\XBEAudioPatcher\\patcher.py)"),
         ("(from E:\TDATA\FFFE000 to F:\TDATA\FFFE000)", ""),
-        ("Unpatch .XBE Soundtrack Location", "RunScript(Q:\\scripts\\Cortana Server Browser\\insignia\\unpatcher.py)"),
+        ("Unpatch .XBE Soundtrack Location", "RunScript(Q:\\scripts\\XBEAudioPatcher\\unpatcher.py)"),
         ("(from F:\TDATA\FFFE000 to E:\TDATA\FFFE000)", ""),
-        ("View ST.DB", "RunScript(Q:\\scripts\\Cortana Server Browser\\xlink\\viewer.py)"),
+        ("View ST.DB", "RunScript(Q:\\scripts\\XBEAudioPatcher\\viewer.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
