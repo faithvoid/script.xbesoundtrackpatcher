@@ -1,8 +1,10 @@
 ## XBE Soundtrack Patcher for XBMC
 A utility that modifies the hex of .XBE files to read soundtrack files from "F:\TDATA\FFFE000" instead of "E:\TDATA\FFFE000". Includes ST.DB viewer to view contents of each individual ST.DB file. 
 
+## Installation:
+- Install script to "Q:\scripts\XBESoundtrackPatcher" (must be installed there as script paths are hardcoded!)
+
 ## How to use:
-- Install script to "Q:\scripts\XBESoundtrackPatcher"
 - Move "E:\TDATA\FFFE0000" to "F:\TDATA\FFFE0000"
 - Run the script
 - Select the game .xbe you'd like to modify (ideally you have the game extracted)
