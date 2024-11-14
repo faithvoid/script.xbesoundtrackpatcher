@@ -13,7 +13,7 @@ A utility that modifies the hex of .XBE files to read soundtrack files from "F:\
 - You tell me.
 
 ## Why?
-The F:\ partition on most modded Xboxes tends to be much larger than the default E partition, so this is a great way to maximize how many songs you can have at once on your Xbox, or keep different soundtracks seperate!
+The F:\ partition on most modded Xboxes tends to be much larger than the default E partition, so this is a great way to maximize how many songs you can have at once on your Xbox, or keep different soundtracks seperate with a little modification!
 
 ## TODO:
 - Ask the user to set a custom directory to load soundtrack files from (as long as it's the same amount of characters, any custom directory should be okay!).
