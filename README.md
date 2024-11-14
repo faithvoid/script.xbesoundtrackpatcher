@@ -18,7 +18,7 @@ The F:\ partition on most modded Xboxes tends to be much larger than the default
 ## TODO:
 - Ask the user to set a custom directory to load soundtrack files from (as long as it's the same amount of characters, any custom directory should be okay!).
 - Implement script to automatically move ST.DB files from E to F.
-- Implement dual-HDD support for Cerbios users.
+- Test Dual-HDD support (if you'd like to test this yourself, comment out the current NEW_PATH and uncomment the other one. This will default to the first partition of your secondary HDD.)
 - Add write support to ST.DB viewer.
 
 ## Credits:
