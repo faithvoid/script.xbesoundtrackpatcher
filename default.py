@@ -6,13 +6,13 @@ import sys
 def main():
     dialog = xbmcgui.Dialog()
     feeds = [
-        ("Patch .XBE Soundtrack (E: to F:)", "RunScript(Q:\\scripts\\XBEAudioPatcher\\patcher.py)"),
-        ("Unpatch .XBE Soundtrack Location (F: to E:)", "RunScript(Q:\\scripts\\XBEAudioPatcher\\unpatcher.py)"),
+        ("Patch .XBE Soundtrack (E:\ to F:\)", "RunScript(Q:\\scripts\\XBEAudioPatcher\\patcher.py)"),
+        ("Unpatch .XBE Soundtrack Location (F:\ to E:\)", "RunScript(Q:\\scripts\\XBEAudioPatcher\\unpatcher.py)"),
         ("View ST.DB", "RunScript(Q:\\scripts\\XBEAudioPatcher\\viewer.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
-    selected = dialog.select(u"XBE Audio Patcher", feed_list)
+    selected = dialog.select(u"XBE Soundtrack Patcher", feed_list)
     
     if selected >= 0:
         name, url = feeds[selected]
