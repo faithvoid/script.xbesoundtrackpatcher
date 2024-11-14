@@ -8,7 +8,7 @@ def main():
     feeds = [
         ("Patch .XBE Soundtrack (E:\ to F:\)", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\patcher.py)"),
         ("Unpatch .XBE Soundtrack Location (F:\ to E:\)", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\unpatcher.py)"),
-        ("Move ST.DB (E: to F:)", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\copy.py)"),
+        ("Copy ST.DB (E: to F:)", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\copy.py)"),
         ("View ST.DB", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\viewer.py)"),
     ]
     
