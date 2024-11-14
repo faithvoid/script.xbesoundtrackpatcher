@@ -2,7 +2,7 @@
 A utility that modifies the hex of .XBE files to read soundtrack files from "F:\TDATA\FFFE000" instead of "E:\TDATA\FFFE000". Includes ST.DB viewer to view contents of each individual ST.DB file. 
 
 ## How to use:
-- Move "E:\TDATA\FFFE000" to "F:\TDATA\FFFE000"
+- Move "E:\TDATA\FFFE0000" to "F:\TDATA\FFFE0000"
 - Run the script
 - Select the game .xbe you'd like to modify (ideally you have the game extracted)
 - Select the folder you'd like to save the modified .xbe in and what name you'd like to save it under (to avoid replacing default.xbe by default).
