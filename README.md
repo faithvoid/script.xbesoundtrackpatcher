@@ -1,4 +1,4 @@
-## XBE Audio Patcher for XBMC
+## XBE Soundtrack Patcher for XBMC
 A utility that modifies the hex of .XBE files to read soundtrack files from "F:\TDATA\FFFE000" instead of "E:\TDATA\FFFE000". Includes ST.DB viewer to view contents of each individual ST.DB file. 
 
 ## How to use:
