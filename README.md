@@ -8,7 +8,7 @@ A utility that modifies the hex of .XBE files to read soundtrack files from "F:\
 - Run the script
 - Select "Copy ST.DB folder (E: to F:)" if you don't already have a soundtrack folder set up on your F:\ partition.
 - Select "Patch .XBE Soundtrack (E:\ to F:\)"
-- Select the game .xbe you'd like to modify (ideally you have the game extracted)
+- Select the game .xbe you'd like to modify (make sure you're using an extracted copy of the game you're patching, attach.xbe files will not work!)
 - Select the folder you'd like to save the modified .xbe in and what name you'd like to save it under.
 - ???
 - Profit.
