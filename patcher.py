@@ -22,7 +22,7 @@ class XBEAudioPatcher:
         # Prompt the user to select an .xbe file
         self.xbe_file_path = xbmcgui.Dialog().browse(1, 'Select .xbe file', 'files', '.xbe')
         if not self.xbe_file_path:
-            xbmcgui.Dialog().ok("XBE Audio Patcher", "No file selected.")
+            xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "No file selected.")
             return False
         return True
 
@@ -30,7 +30,7 @@ class XBEAudioPatcher:
         # Prompt user to select a folder for saving the new .xbe file
         self.save_directory = xbmcgui.Dialog().browse(0, 'Select Folder to Save .xbe', 'files')
         if not self.save_directory:
-            xbmcgui.Dialog().ok("XBE Audio Patcher", "No save location selected.")
+            xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "No save location selected.")
             return False
 
         # Prompt user for the filename using xbmc.Keyboard
@@ -39,10 +39,10 @@ class XBEAudioPatcher:
         if keyboard.isConfirmed():
             self.save_filename = keyboard.getText()
             if not self.save_filename:
-                xbmcgui.Dialog().ok("XBE Audio Patcher", "No filename entered.")
+                xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "No filename entered.")
                 return False
         else:
-            xbmcgui.Dialog().ok("XBE Audio Patcher", "Filename input canceled.")
+            xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "Filename input canceled.")
             return False
 
         # Combine directory and filename to create full path
@@ -52,7 +52,7 @@ class XBEAudioPatcher:
     def replace_hex(self):
         # Ensure an input file is selected
         if not self.xbe_file_path:
-            xbmcgui.Dialog().ok("XBE Audio Patcher", "Please select an .xbe file first.")
+            xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "Please select an .xbe file first.")
             return
 
         try:
@@ -61,7 +61,7 @@ class XBEAudioPatcher:
 
                 # Check if OLD_PATH exists in xbe_data
                 if OLD_PATH not in xbe_data:
-                    xbmcgui.Dialog().ok("XBE Audio Patcher", "Pattern not found in file.")
+                    xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "Pattern not found in file.")
                     return
 
                 # Perform replacement
@@ -71,10 +71,10 @@ class XBEAudioPatcher:
                 with open(self.save_file_path, 'wb') as new_xbe_file:
                     new_xbe_file.write(xbe_data)
 
-                xbmcgui.Dialog().ok("XBE Audio Patcher", "File saved successfully!")
+                xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "File saved successfully!")
 
         except Exception as e:
-            xbmcgui.Dialog().ok("XBE Audio Patcher", "Error: " + str(e))
+            xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "Error: " + str(e))
 
     def run(self):
         # Step 1: Ask user to browse for the input file
