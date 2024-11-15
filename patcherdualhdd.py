@@ -58,7 +58,7 @@ class XBEAudioPatcher:
 
                 # Check if OLD_PATH exists in xbe_data
                 if OLD_PATH not in xbe_data:
-                    xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "Pattern not found in file.")
+                    xbmcgui.Dialog().ok("Pattern Not Found (E:\)", "Are you sure this game supports custom soundtracks?")
                     return
 
                 # Perform replacement
