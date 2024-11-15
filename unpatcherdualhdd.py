@@ -59,7 +59,7 @@ class XBEAudioPatcher:
 
                 # Check if OLD_PATH exists in xbe_data
                 if OLD_PATH not in xbe_data:
-                    xbmcgui.Dialog().ok("XBE Soundtrack Patcher", "Pattern not found in file.")
+                    xbmcgui.Dialog().ok("Pattern Not Found! (H:\)", "Are you sure this .XBE is patched?")
                     return
 
                 # Perform replacement
