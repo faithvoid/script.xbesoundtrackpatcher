@@ -14,10 +14,11 @@ def main():
         ("Unpatch .XBE Soundtrack Location (H:\ to E:\)", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\unpatcherdualhdd.py)"),
         ("- Utilities -", ""),
         ("Check .XBE Soundtrack Location", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\checker.py)"),
+        ("View ST.DB", "RunScript(Q:\\scripts\\XBESoundtrackPatcher\\viewer.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
-    selected = dialog.select(u"XBE Soundtrack Patcher - Patches", feed_list)
+    selected = dialog.select(u"XBE Soundtrack Patcher - Menu", feed_list)
     
     if selected >= 0:
         name, url = feeds[selected]
