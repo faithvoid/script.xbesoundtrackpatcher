@@ -23,6 +23,7 @@ The F:\ partition on most modded Xboxes tends to be much larger than the default
 - Ask the user to set a custom directory to load soundtrack files from (as long as it's the same amount of characters, any custom directory should be okay!).
 - Test Dual-HDD support (if you'd like to test this yourself, replace "patcher.py" with "patcherdualhdd.py". This will default to the first partition of your secondary HDD.). Requires a dashboard capable of reading from a secondary HDD, like LithiumX, for file management.
 - Add write support to ST.DB viewer(?) (trying to figure it out is giving me a migraine so any help is appreciated)
+- Use as a basis for a savegame patcher? (possibly useful for getting around the 240 save game limit, or storing a "secondary profile")
 
 ## Credits:
 - Sifaw99 on OGXbox for the original documentation of what hex values had to be modified!
