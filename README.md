@@ -20,7 +20,7 @@ A utility that modifies the hex of .XBE files to read soundtrack files from "F:\
 The F:\ partition on most modded Xboxes tends to be much larger than the default E partition, so this is a great way to maximize how many songs you can have at once on your Xbox, or keep different soundtracks seperate with a little modification!
 
 ## TODO:
-- Ask the user to set a custom directory to load soundtrack files from (as long as it's the same amount of characters, any custom directory should be okay!).
+- Ask the user to set a custom directory to load soundtrack files from (as long as it's the same amount of characters, any custom directory should be okay! ie; F:\SOUND\TONYHWK instead of E:\TDATA\FFFE000 for a custom Tony Hawk soundtrack folder).
 - Test Dual-HDD support (if you'd like to test this yourself, replace "patcher.py" with "patcherdualhdd.py". This will default to the first partition of your secondary HDD.). Requires a dashboard capable of reading from a secondary HDD, like LithiumX, for file management.
 - Add write support to ST.DB viewer(?) (trying to figure it out is giving me a migraine so any help is appreciated)
 - Use as a basis for a savegame patcher? (possibly useful for getting around the 240 save game limit, or storing a "secondary profile")
