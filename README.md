@@ -14,6 +14,7 @@ A utility that modifies the hex of .XBE files to read soundtrack files from "F:\
 - Profit.
 
 ## Bugs:
+- Track count currently doesn't show up in ST.DB viewer, will fix ASAP!
 - You tell me.
 
 ## Why?
